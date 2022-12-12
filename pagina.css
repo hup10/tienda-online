@@ -1,0 +1,104 @@
+@import url(menu.css);
+@import url(baner.css);
+@import url(blog.css);
+@import url(info.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+#hero{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 66vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(92, 92, 92, 0.5),
+        rgba(85, 85, 85, 0.5)
+    )
+    ,url("mongo/brytal.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-color: bisque;
+    margin: 0px;
+  
+}
+body{
+    font-family:monospace;
+}
+.contenedor{
+    width: 98%;
+    margin: auto;
+
+}
+h1{
+    float: left;
+
+}
+header.contenedor{
+    display: table;
+}
+img{
+    width:107px ;
+}
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+#vienbenidos{
+    text-align: center;
+}
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.copy{
+    font-size: 20px;
+
+}
+.sociales{
+    width: 100px;
+    text-align: center;
+    font-size: 28px;
+}
+.sociales a{
+    color: #333;
+    text-decoration: none;
+}
+@media (min-width:1024px){
+    .sociales{
+        width: auto;
+    }
+    footer .contenedor{
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:1024px){
+    .contenedor{
+        width: 1000px;
+    }
+}
+
+
+
